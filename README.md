@@ -1,2 +1,3 @@
-# DBMS-mini-project-shoe
+# Shoe-ecomm
 Shoe Database management system
+
