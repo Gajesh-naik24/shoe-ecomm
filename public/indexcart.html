@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SHOPPING CART</title>
+  <link rel="stylesheet" href="stylecarts.css">
+  <link
+    href="https://fonts.googleapis.com/css?family=Source+Sans+3:200,300,regular,500,600,700,800,900,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic"
+    rel="stylesheet" />
+</head>
+
+<body>
+
+  <main class="container">
+
+    <h1 class="heading">
+      <ion-icon name="cart-outline"></ion-icon> SHOPPING CART
+    </h1>
+
+    
+
+      </section>
+      <section class="cart">
+          <!-- HEREEEE -->
+        <div class="cart-item-box"> 
+
+          <h2 class="section-heading">Order Summary</h2>
+
+          <div class="product-card" id="productcard">
+
+            <div class="card">
+
+              <div class="img-box">
+                <img src="" alt="air1" width="80px" class="product-img" id="imageTag">
+              </div>
+
+              <div class="detail">
+
+                <h4 class="product-name" id="product-name">air1</h4>
+
+                <div class="wrapper">
+
+                  <div class="product-qty">
+                    <button id="decrement">
+                      <ion-icon name="remove-outline"></ion-icon>
+                    </button>
+
+                    <span id="quantity">1</span>
+
+                    <button id="increment">
+                      <ion-icon name="add-outline"></ion-icon>
+                    </button>
+                  </div>
+
+                  <div class="price">
+                    <span id="price">5000</span>
+                  </div>
+
+                </div>
+
+              </div>
+
+               <button onclick="btnGone()" class="product-close-btn" id="close-button">
+                <ion-icon name="close-outline"></ion-icon>
+              </button>
+
+            </div>
+
+          </div>
+
+  
+
+        </div> 
+
+        <div class="wrapper">
+
+          
+
+          <div class="amount">
+
+            <div class="subtotal">
+              <span>Subtotal</span> <span>Rs <span id="subtotal">0.00</span></span>
+            </div>
+
+            <div class="tax">
+              <span>Tax</span> <span>Rs <span id="tax">500</span></span>
+            </div>
+
+            <div class="shipping">
+              <span>Shipping</span> <span><span id="shipping">YIKES IT IS FREE</span></span>
+            </div>
+
+            <div class="total">
+              <span>Total</span> <span>Rs<span id="total">0.00</span></span>
+            </div>
+
+          </div>
+
+          <button id="buyButton" onclick="buynow()" class="btn btn-primary">
+            <b>Pay</b> Rs <span id="payAmount">0.00</span>
+          </button>
+
+        </div>
+
+      </section>
+
+    </div>
+
+  </main>
+
+
+
+
+
+
+  <script src="./scriptcart.js"></script>
+  <script>
+    function buynow(){
+      window.location.href = "http://localhost:3000/payment?name="+`${pname}`+"&amount=" + document.querySelector('#payAmount').textContent;
+    }
+
+  </script>
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+
+</body>
+
+</html>

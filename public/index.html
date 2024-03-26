@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Shoe Website</title>
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+   
+
+</head>
+<body>
+
+<header class="header">
+
+    <div class="header-1">
+
+        <a href="#" class="logo"> <i class="fas fa-shoe-prints"></i> shoeify </a>
+
+        <form action="" class="search-form">
+            <input type="search" name="" placeholder="search here..." id="search-box">
+            <label for="search-box" class="fas fa-search"></label>
+        </form>
+
+        <div class="icons">
+            <div id="search-btn" class="fas fa-search">search</div>
+            <a href="/indexcart.html" class="fas fa-shopping-cart"></a>
+            <div id="login-btn" class="fas fa-user"></div>
+        </div>
+
+    </div>
+
+    <div class="header-2">
+        <nav class="navbar">
+            <a href="#home">home</a>
+            <a href="#Featured">Featured</a>
+            <a href="#arrivals">arrivals</a>
+            
+        </nav>
+    </div>
+
+</header>
+
+
+<!-- bottom navbar  -->
+
+<nav class="bottom-navbar">
+    <a href="#home" class="fas fa-home"></a>
+    <a href="#Featured" class="fas fa-list"></a>
+    <a href="#arrivals" class="fas fa-tags"></a>
+    
+</nav>
+
+<!-- login form  -->
+
+<div class="login-form-container">
+
+    <div id="close-login-btn" class="fas fa-times"></div>
+
+    <form action="/login" method="POST">
+        <h3>sign in</h3>
+        <span>email</span>
+        <input type="text" name="email" class="box" placeholder="enter your email" >
+        <span>password</span>
+        <input type="password" name="password" class="box" placeholder="enter your password" >
+        <div class="checkbox">
+            <input type="checkbox" name="remember" id="remember-me">
+            <label for="remember-me"> remember me</label>
+        </div>
+        <button class="btn" type="submit">GO</button>
+       
+        <p>don't have an account ? <a href="signUp.html">create one</a></p>
+    </form>
+
+</div>
+
+
+<!--sign-up-->
+
+<div class="login-form-container">
+
+    <div id="close-login-btn" class="fas fa-times"></div>
+
+    <form action="/signup" method="POST">
+        <h3>sign up</h3>
+        <span>username</span>
+        <input type="email" name="" class="box" placeholder="enter your email" >
+        <span>password</span>
+        <input type="password" name="" class="box" placeholder="enter your password" >
+        <div class="checkbox">
+        </div>
+       
+        <input type="submit" value="sign up" class="btn" onclick="document.querySelector('.login-form-container').classList.toggle('active');">
+    </form>
+
+</div>
+
+<!-- home section starts  -->
+
+<section class="home" id="home">
+
+    <div class="row">
+
+        <div class="content">
+            <h3>upto 50% off</h3>
+            <p>Heaven for the shoe lovers. We provide your favourite Shoes in cheap price.(●'◡'●)</p>
+            <a href="#Featured" class="btn">shop now</a>
+        </div>
+
+        <div class="swiper Shoes-slider">
+            <div class="swiper-wrapper">
+                <a href="#" class="swiper-slide"><img src="./image/photo_2022-12-31_21-41-43.jpg" alt=""></a>
+              </div>
+            <img src="image/stand.png" class="stand" alt="" >
+        </div>
+
+    </div>
+
+
+</section>
+     
+</section>
+
+
+<section class="icons-container">
+
+    <div class="icons">
+        <i class="fas fa-shipping-fast"></i>
+        <div class="content">
+            <h3>free shipping</h3>
+            <p>order over Rs.100</p>
+        </div>
+    </div>
+
+    <div class="icons">
+        <i class="fas fa-lock"></i>
+        <div class="content">
+            <h3>secure payment</h3>
+            <p>100 secure payment</p>
+        </div>
+    </div>
+
+    <div class="icons">
+        <i class="fas fa-redo-alt"></i>
+        <div class="content">
+            <h3>easy returns</h3>
+            <p>10 days returns</p>
+        </div>
+    </div>
+
+    <div class="icons">
+        <i class="fas fa-headset"></i>
+        <div class="content">
+            <h3>24/7 support</h3>
+            <p>call us anytime</p>
+        </div>
+    </div>
+
+ </section>
+
+
+<section class="Featured" id="Featured">
+
+    <h1 class="heading"> <span>Featured Shoes</span> </h1>
+
+     <div class="swiper Featured-slider">
+
+        <div class="swiper-wrapper">
+
+            <div class="swiper-slide box">
+                <div class="icons">
+                    
+                </div>
+                <div class="image">
+                    <img src="/image/photo_2022-12-31_21-41-43.jpg" alt="">
+                </div>
+                <div class="content">
+                    <h3>MAG BTTF</h3>
+                    <div class="price">Rs.5000 <span>Rs.7500</span></div>
+                    <a href="/indexcart?name=MAG BTTF&price=5000&image=photo_2022-12-31_21-41-43.jpg" class="btn">add to cart</a>
+                </div>
+            </div>
+
+            <div class="swiper-slide box">
+           <div class="icons">
+                   
+                </div>
+                <div class="image">
+                    <img src="/image/photo_2022-12-31_21-41-50.jpg" alt="">
+                </div>
+                <div class="content">
+                    <h3>AIR YEEZY 1</h3>
+                    <div class="price">Rs.5500 <span>Rs.9650 </span></div>
+                    <a href="/indexcart?name=AIR YEEZY 1&price=5500&image=photo_2022-12-31_21-41-50.jpg" class="btn">add to cart</a>
+                </div>
+            </div>
+
+            <div class="swiper-slide box">
+                <div class="icons">
+                    
+                </div>
+                <div class="image">
+                    <img src="/image/photo_2022-12-31_21-41-54.jpg" alt="">
+                </div>
+                <div class="content">
+                    <h3>AIR MAX 1</h3>
+                    <div class="price">Rs. 8560 <span>Rs.10063</span></div>
+                    <a href="/indexcart?name=AIR MAX 1&price=8560&image=photo_2022-12-31_21-41-54.jpg"  class="btn">add to cart</a>
+                </div>
+            </div>
+
+            <div class="swiper-slide box">
+                <div class="icons">
+                    
+                </div>
+                <div class="image">
+                    <img src="/image/air-jordan-1-retro-high-og-shoes-h2pxgz.png" alt="">
+                </div>
+                <div class="content">
+                    <h3>JORDAN 1 RETRO</h3>
+                    <div class="price">Rs.4650<span>Rs.5550</span></div>
+                    <a href="/indexcart?name=JORDAN 1 RETRO&price=4650&image=air-jordan-1-retro-high-og-shoes-h2pxgz.png" class="btn">add to cart</a>
+                </div>
+            </div>
+
+            <div class="swiper-slide box">
+                <div class="icons">
+                    
+                </div>
+                <div class="image">
+                    <img src="/image/best-jordans-of-all-time-review-luxe-digital@2x.jpg" alt="">
+                </div>
+                <div class="content">
+                    <h3>JORDAN 3</h3>
+                    <div class="price">Rs.8660 <span>Rs.9760</span></div>
+                    <a href="/indexcart?name=JORDAN 3&price=8660&image=best-jordans-of-all-time-review-luxe-digital@2x.jpg" class="btn">add to cart</a>
+                </div>
+            </div>
+
+            <!-- <div class="swiper-slide box">
+                <div class="icons">
+                    
+                </div>
+                <div class="image">
+                    <img src="/image/c448b55f-60fd-46e9-a818-0d9bc392e8b1.webp" alt="">
+                </div>
+                <div class="content">
+                    <h3>RETRO FASHION</h3>
+                    <div class="price">Rs.5000 <span>Rs.7500</span></div>
+                    <a href="/indexcart?name=RETRO FASHION&price=5000&image=c448b55f-60fd-46e9-a818-0d9bc392e8b1.webp" class="btn">add to cart</a>
+                </div>
+            </div>
+
+            <div class="swiper-slide box">
+                <div class="icons">
+                    
+                </div>
+                <div class="image">
+                    <img src="/image/air-jordan-1-low-se-shoes-zHWncv.png" alt="">
+                </div>
+                <div class="content">
+                    <h3>METEOR 1</h3>
+                    <div class="price">Rs.6000 <span>Rs.7500</span></div>
+                    <a href="/indexcart?name=METEOR 1&price=6000&image=air-jordan-1-low-se-shoes-zHWncv.png" class="btn">add to cart</a>
+                </div>
+            </div> -->
+
+            <div class="swiper-slide box">
+                <div class="icons">
+                    
+                </div>
+                <div class="image">
+                    <img src="/image/35fd1adb-0c70-47ec-a8a2-97f5b4fa6fe9.webp" alt="">
+                </div>
+                <div class="content">
+                    <h3>AIR YEEZY2</h3>
+                    <div class="price">Rs.4550<span>Rs.8880</span></div>
+                    <a href="/indexcart?name=AIR YEEZY 2&price=4550&image=35fd1adb-0c70-47ec-a8a2-97f5b4fa6fe9.webp" class="btn">add to cart</a>
+                </div>
+            </div>
+    </div>
+
+    
+</section>
+    
+     
+
+<section class="arrivals" id="arrivals">
+
+    <h1 class="heading"> <span>new arrivals</span> </h1>
+
+    <div class="swiper arrivals-slider">
+
+        <div class="swiper-wrapper">
+
+            <a href="#" class="swiper-slide box">
+                <div class="image">
+                    <img src="/image/14077010_18662963_480.webp" alt="">
+                </div>
+                <div class="content">
+                    <h3>new arrivals</h3>
+                    <div class="price">Rs.4999<span>Rs.9000</span></div>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        
+                    </div>
+                </div>
+            </a>
+
+            <a href="#" class="swiper-slide box">
+                <div class="image">
+                    <img src="/image/35fd1adb-0c70-47ec-a8a2-97f5b4fa6fe9.webp" alt="">
+                </div>
+                <div class="content">
+                    <h3>new arrivals</h3>
+                    <div class="price">Rs.3999 <span>Rs.5000</span></div>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                </div>
+            </a>
+
+            
+
+            <a href="#" class="swiper-slide box">
+                <div class="image">
+                    <img src="/image/air-jordan-1-retro-high-og-shoes-h2pxgz.png" alt="">
+                </div>
+                <div class="content">
+                    <h3>new arrivals</h3>
+                    <div class="price">Rs.3000 <span>Rs.5000</span></div>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        
+                    </div>
+                </div>
+            </a>
+
+            <a href="#" class="swiper-slide box">
+                <div class="image">
+                    <img src="/image/best-jordans-of-all-time-review-luxe-digital@2x.jpg" alt="">
+                </div>
+                <div class="content">
+                    <h3>new arrivals</h3>
+                    <div class="price">Rs.3000 <span>Rs.5000</span></div>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                </div>
+            </a>
+
+        </div>
+
+    </div>
+
+    <div class="swiper arrivals-slider">
+
+        <div class="swiper-wrapper">
+
+            <a href="#" class="swiper-slide box">
+                <div class="image">
+                    <img src="/image/f7817ab9-e7bc-4ea9-a0ba-bddc38cf76cb.webp" alt="">
+                </div>
+                <div class="content">
+                    <h3>new arrivals</h3>
+                    <div class="price">Rs.5500 <span>Rs.8000</span></div>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                </div>
+            </a>
+
+            <a href="#" class="swiper-slide box">
+                <div class="image">
+                    <img src="/image/air-jordan-11-300.webp" alt="">
+                </div>
+                <div class="content">
+                    <h3>new arrivals</h3>
+                    <div class="price">Rs.2500 <span>Rs.4000</span></div>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                </div>
+            </a>
+
+            <a href="#" class="swiper-slide box">
+                <div class="image">
+                    <img src="/image/air-jordan-1-low-se-shoes-zHWncv.png" alt="">
+                </div>
+                <div class="content">
+                    <h3>new arrivals</h3>
+                    <div class="price">Rs.1500 <span>Rs.2500</span></div>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                </div>
+            </a>
+
+           
+
+            <a href="#" class="swiper-slide box">
+                <div class="image">
+                    <img src="/image/c448b55f-60fd-46e9-a818-0d9bc392e8b1.webp" alt="">
+                </div>
+                <div class="content">
+                    <h3>new arrivals</h3>
+                    <div class="price">Rs.4599<span>Rs.6000</span></div>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                </div>
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- question section starts -->
+
+<section class="newsletter">
+
+    <form action="/rating" method="get">
+        <h1>YIKEES HAVE A REVIEW GIVE HERE</h1>
+        <input type="submit" value="GIVE REVIEW" class="btn">
+    </form>
+
+</section>
+
+<!-- question section ends -->
+
+
+<section class="deal">
+
+    <div class="content">
+        <h3>deal of the day</h3>
+        <h1>upto 50% off</h1>
+        <p>Get now at lowest price ever</p>
+        <!--<a href="#" class="btn">shop now</a> -->
+    </div>
+
+    <div class="image">
+        <img src="/image/best-jordans-of-all-time-review-luxe-digital@2x.jpg" alt="">
+    </div>
+
+</section>
+
+
+<script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+
+<script src="script.js"></script>
+
+</body>
+</html>

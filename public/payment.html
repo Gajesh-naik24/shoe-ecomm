@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="payment.css">
+
+</head>
+<body>
+
+<div class="container">
+
+    <form action="/payment" method="POST">
+
+        <div class="row">
+
+            <div class="col">
+
+                <h3 class="title">BILLING ADDRESS</h3>
+
+                <div class="inputBox">
+                    <span>FULL NAME:</span>
+                
+                    <input type="name"  name="fname" class="box" placeholder="Enter the name" required>
+                </div>
+                <div class="inputBox">
+                    <span>E-MAIL:</span>
+                    <input type="email" name="email" class="box" placeholder="Enter the email" required>
+                </div>
+                <div class="inputBox">
+                    <span>ADDRESS:</span>
+                    <input type="address"name="address" class="box" placeholder="Enter the locality" required>
+                </div>
+                <div class="inputBox">
+                    <span>AMOUNT:</span>
+                    <input id="amountInput" type="text" readonly="readonly" name="amount" class="box" placeholder="Amount" required>
+                </div>
+                <div class="inputBox">
+                    <span>PRODUCT NAME:</span>
+                    <input id="nameInput" type="text" readonly="readonly" name="name" class="box" placeholder="Product Name" required>
+                </div>
+                <div class="inputBox">
+                    <span>CITY:</span>
+                    <input type="city" name="city" class="box" placeholder="Enter the city" required>
+                </div>
+
+                <div class="flex">
+                    <div class="inputBox">
+                        <span>STATE:</span>
+                        <input type="state" name="state" class="box" placeholder="Enter the state" required>
+                    </div>
+                    <div class="inputBox">
+                        <span>ZIPCODE:</span>
+                        <input type="zipcode" name="zipcode" class="box" placeholder="Enter the zipcode" required>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="col">
+
+                <h3 class="title">PAYMENT</h3>
+
+                <div class="inputBox">
+                    <span>ONLY UPI:</span>
+                    <img src="/images/1111.jpg" alt="">
+                </div>
+                <div class="inputBox">
+                    <span>UPI ID:</span>
+                    <input type="upi" name="upi" class="box" placeholder="Enter the name" required>
+                </div>
+                <div class="inputBox">
+                    <span>ENTER UPI PASSWORD:</span>
+                    <input type="pass" name="pass" class="box" placeholder="****" required>
+                </div>
+                
+                
+            </div>
+    
+        </div>
+
+        <input type="submit" value="CHECKOUT" class="submit-btn">
+
+    </form>
+
+</div>    
+    
+</body>
+<script>
+    const amount = new URLSearchParams(window.location.search).get("amount");
+    const name = new URLSearchParams(window.location.search).get("name");
+    document.getElementById("amountInput").value = amount;
+    document.getElementById("nameInput").value = name;
+</script>
+</html>
