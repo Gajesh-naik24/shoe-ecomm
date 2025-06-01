@@ -1,12 +1,21 @@
 # Shoe-ecomm
 Shoe Database management system
 
-## 🛠️ Tech Stack
+  ## 🛠️ Tech Stack
 
 - **Frontend**: HTML, CSS, JavaScript
 - **Backend**: Node.js
 - **Database**: MySQL (via XAMPP)
 - **Tools**: XAMPP, Visual Studio Code.
+
+  ## 🖼️ Features
+
+- 📱 Fully responsive design for mobile & desktop
+- 🛍️ Product listings with image previews and prices
+- 🛒 Static cart page with quantity controls
+- 🔐 Sign In / Sign Up UI
+- 💳 Mock payment form with UPI placeholder
+- ⭐ User rating/review form
   
 • Developed a fully responsive e-commerce website for shoe sales featuring dynamic product listings, search 
 functionality, and an intuitive user interface using HTML, CSS, and JavaScript. 
