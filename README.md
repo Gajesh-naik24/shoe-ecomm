@@ -28,3 +28,4 @@ database operations with SQL queries.
 
 • Implemented secure login/logout, real-time cart updates, and client-side validations to ensure smooth and secure 
 user experience. 
+Linkedin : https://www.linkedin.com/in/gajesh-naik/details/projects/
